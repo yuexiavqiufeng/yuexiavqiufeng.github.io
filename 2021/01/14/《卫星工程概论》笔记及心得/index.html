@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+    <!-- title -->
+
+
+
+
+<!-- keywords -->
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
+    <meta name="author" content="yuexiaqiufeng">
+    <meta name="renderer" content="webkit">
+    <meta name="copyright" content="yuexiaqiufeng">
+    
+    <meta name="keywords" content="daily,space science and technology,">
+    
+    <meta name="description" content="这是没人看的小黑屋">
+    <meta name="description" content="读书笔记——卫星工程概论前言​     在第一节空间概论课上，老师提出了保持每周阅读空间科学相关书籍的要求，由于同时还有让我们构思小卫星创意的任务，我选择了卫星工程概论这本书。在获取这本书的时候还有一个小插曲，就是这本书已经接近绝版。 ​    之所以在此整理之前的笔记，是为了完成大作业，也是为了对这本书中专业知识有一个系统性的总结，为之后的学习和工作提供一些专业基础知识，借此契机我得以再次全面的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="卫星工程 (上）笔记">
+<meta property="og:url" content="http://example.com/2021/01/14/%E3%80%8A%E5%8D%AB%E6%98%9F%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%AE%BA%E3%80%8B%E7%AC%94%E8%AE%B0%E5%8F%8A%E5%BF%83%E5%BE%97/index.html">
+<meta property="og:site_name" content="月下秋风的小黑屋">
+<meta property="og:description" content="读书笔记——卫星工程概论前言​     在第一节空间概论课上，老师提出了保持每周阅读空间科学相关书籍的要求，由于同时还有让我们构思小卫星创意的任务，我选择了卫星工程概论这本书。在获取这本书的时候还有一个小插曲，就是这本书已经接近绝版。 ​    之所以在此整理之前的笔记，是为了完成大作业，也是为了对这本书中专业知识有一个系统性的总结，为之后的学习和工作提供一些专业基础知识，借此契机我得以再次全面的">
+<meta property="og:locale">
+<meta property="og:image" content="http://example.com/2021/01/14/%E3%80%8A%E5%8D%AB%E6%98%9F%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%AE%BA%E3%80%8B%E7%AC%94%E8%AE%B0%E5%8F%8A%E5%BF%83%E5%BE%97/IMG_1939.JPG">
+<meta property="og:image" content="http://example.com/2021/01/14/%E3%80%8A%E5%8D%AB%E6%98%9F%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%AE%BA%E3%80%8B%E7%AC%94%E8%AE%B0%E5%8F%8A%E5%BF%83%E5%BE%97/46E74D1EA2153EE14F421654A51EBBB7.png">
+<meta property="og:image" content="http://example.com/2021/01/14/%E3%80%8A%E5%8D%AB%E6%98%9F%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%AE%BA%E3%80%8B%E7%AC%94%E8%AE%B0%E5%8F%8A%E5%BF%83%E5%BE%97/image-20201220165000696.png">
+<meta property="article:published_time" content="2021-01-14T07:17:00.000Z">
+<meta property="article:modified_time" content="2021-01-14T07:17:54.895Z">
+<meta property="article:author" content="yuexiaqiufeng">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2021/01/14/%E3%80%8A%E5%8D%AB%E6%98%9F%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%AE%BA%E3%80%8B%E7%AC%94%E8%AE%B0%E5%8F%8A%E5%BF%83%E5%BE%97/IMG_1939.JPG">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    
+    <title>卫星工程 (上）笔记 · yuexiaqiufeng&#39;s home</title>
+    <style type="text/css">
+    @font-face {
+        font-family: 'Oswald-Regular';
+        src: url("/font/Oswald-Regular.ttf");
+    }
+
+    body {
+        margin: 0;
+    }
+
+    header,
+    footer,
+    .back-top,
+    .sidebar,
+    .container,
+    .site-intro-meta,
+    .toc-wrapper {
+        display: none;
+    }
+
+    .site-intro {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        /* height: 50vh; */
+        overflow: hidden;
+    }
+
+    .site-intro-placeholder {
+        position: absolute;
+        z-index: -2;
+        top: 0;
+        left: 0;
+        width: calc(100% + 300px);
+        height: 100%;
+        background: repeating-linear-gradient(-45deg, #444 0, #444 80px, #333 80px, #333 160px);
+        background-position: center center;
+        transform: translate3d(-226px, 0, 0);
+        animation: gradient-move 2.5s ease-out 0s infinite;
+    }
+
+    @keyframes gradient-move {
+        0% {
+            transform: translate3d(-226px, 0, 0);
+        }
+        100% {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+</style>
+
+    <link rel="preload" href= "/css/style.css?v=20180824" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="stylesheet" href= "/css/mobile.css?v=20180824" media="(max-width: 980px)">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    
+    <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+/* This file is meant as a standalone workflow for
+- testing support for link[rel=preload]
+- enabling async CSS loading in browsers that do not support rel=preload
+- applying rel preload css once loaded, whether supported or not.
+*/ -->
+<script>
+(function( w ){
+	"use strict";
+	// rel=preload support test
+	if( !w.loadCSS ){
+		w.loadCSS = function(){};
+	}
+	// define on the loadCSS obj
+	var rp = loadCSS.relpreload = {};
+	// rel=preload feature support test
+	// runs once and returns a function for compat purposes
+	rp.support = (function(){
+		var ret;
+		try {
+			ret = w.document.createElement( "link" ).relList.supports( "preload" );
+		} catch (e) {
+			ret = false;
+		}
+		return function(){
+			return ret;
+		};
+	})();
+
+	// if preload isn't supported, get an asynchronous load by using a non-matching media attribute
+	// then change that media back to its intended value on load
+	rp.bindMediaToggle = function( link ){
+		// remember existing media attr for ultimate state, or default to 'all'
+		var finalMedia = link.media || "all";
+
+		function enableStylesheet(){
+			link.media = finalMedia;
+		}
+
+		// bind load handlers to enable media
+		if( link.addEventListener ){
+			link.addEventListener( "load", enableStylesheet );
+		} else if( link.attachEvent ){
+			link.attachEvent( "onload", enableStylesheet );
+		}
+
+		// Set rel and non-applicable media type to start an async request
+		// note: timeout allows this to happen async to let rendering continue in IE
+		setTimeout(function(){
+			link.rel = "stylesheet";
+			link.media = "only x";
+		});
+		// also enable media after 3 seconds,
+		// which will catch very old browsers (android 2.x, old firefox) that don't support onload on link
+		setTimeout( enableStylesheet, 3000 );
+	};
+
+	// loop through link elements in DOM
+	rp.poly = function(){
+		// double check this to prevent external calls from running
+		if( rp.support() ){
+			return;
+		}
+		var links = w.document.getElementsByTagName( "link" );
+		for( var i = 0; i < links.length; i++ ){
+			var link = links[ i ];
+			// qualify links to those with rel=preload and as=style attrs
+			if( link.rel === "preload" && link.getAttribute( "as" ) === "style" && !link.getAttribute( "data-loadcss" ) ){
+				// prevent rerunning on link
+				link.setAttribute( "data-loadcss", true );
+				// bind listeners to toggle media back
+				rp.bindMediaToggle( link );
+			}
+		}
+	};
+
+	// if unsupported, run the polyfill
+	if( !rp.support() ){
+		// run once at least
+		rp.poly();
+
+		// rerun poly on an interval until onload
+		var run = w.setInterval( rp.poly, 500 );
+		if( w.addEventListener ){
+			w.addEventListener( "load", function(){
+				rp.poly();
+				w.clearInterval( run );
+			} );
+		} else if( w.attachEvent ){
+			w.attachEvent( "onload", function(){
+				rp.poly();
+				w.clearInterval( run );
+			} );
+		}
+	}
+
+
+	// commonjs
+	if( typeof exports !== "undefined" ){
+		exports.loadCSS = loadCSS;
+	}
+	else {
+		w.loadCSS = loadCSS;
+	}
+}( typeof global !== "undefined" ? global : this ) );
+</script>
+
+    <link rel="icon" href= "/assets/favicon.ico" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js" as="script" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" as="script" />
+    <link rel="preload" href="/scripts/main.js" as="script" />
+    <link rel="preload" as="font" href="/font/Oswald-Regular.ttf" crossorigin>
+    <link rel="preload" as="font" href="https://at.alicdn.com/t/font_327081_1dta1rlogw17zaor.woff" crossorigin>
+    
+    <!-- fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" defer></script>
+    <!-- 百度统计  -->
+    
+    <!-- 谷歌统计  -->
+    
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+    
+        <body class="post-body">
+    
+    
+<header class="header">
+
+    <div class="read-progress"></div>
+    <div class="header-sidebar-menu">&#xe775;</div>
+    <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >yuexiaqiufeng&#39;s home.</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">卫星工程 (上）笔记</a>
+            </div>
+    </div>
+    
+    <a class="home-link" href=/>yuexiaqiufeng's home.</a>
+</header>
+    <div class="wrapper">
+        <div class="site-intro" style="
+
+
+
+
+
+
+
+height:50vh;
+">
+    
+    <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
+            
+    <div class="site-intro-placeholder"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/mountain2.png)"></div>
+    <div class="site-intro-meta">
+        <!-- 标题  -->
+        <h1 class="intro-title">
+            <!-- 主页  -->
+            
+            卫星工程 (上）笔记
+            <!-- 404 -->
+            
+        </h1>
+        <!-- 副标题 -->
+        <p class="intro-subtitle">
+            <!-- 主页副标题  -->
+            
+            
+            <!-- 404 -->
+            
+        </p>
+        <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                
+                    <div class="post-intro-read">
+                        <span>字数统计: <span class="post-count word-count">10.4k</span>阅读时长: <span class="post-count reading-time">35 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2021/01/14</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        
+    </div>
+</div>
+        <script>
+ 
+  // get user agent
+  var browser = {
+    versions: function () {
+      var u = window.navigator.userAgent;
+      return {
+        userAgent: u,
+        trident: u.indexOf('Trident') > -1, //IE内核
+        presto: u.indexOf('Presto') > -1, //opera内核
+        webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+        gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+        mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+        android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+        iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者安卓QQ浏览器
+        iPad: u.indexOf('iPad') > -1, //是否为iPad
+        webApp: u.indexOf('Safari') == -1, //是否为web应用程序，没有头部与底部
+        weixin: u.indexOf('MicroMessenger') == -1, //是否为微信浏览器
+        uc: u.indexOf('UCBrowser') > -1 //是否为android下的UC浏览器
+      };
+    }()
+  }
+  console.log("userAgent:" + browser.versions.userAgent);
+
+  // callback
+  function fontLoaded() {
+    console.log('font loaded');
+    if (document.getElementsByClassName('site-intro-meta')) {
+      document.getElementsByClassName('intro-title')[0].classList.add('intro-fade-in');
+      document.getElementsByClassName('intro-subtitle')[0].classList.add('intro-fade-in');
+      var postIntros = document.getElementsByClassName('post-intros')[0]
+      if (postIntros) {
+        postIntros.classList.add('post-fade-in');
+      }
+    }
+  }
+
+  // UC不支持跨域，所以直接显示
+  function asyncCb(){
+    if (browser.versions.uc) {
+      console.log("UCBrowser");
+      fontLoaded();
+    } else {
+      WebFont.load({
+        custom: {
+          families: ['Oswald-Regular']
+        },
+        loading: function () {  //所有字体开始加载
+          // console.log('loading');
+        },
+        active: function () {  //所有字体已渲染
+          fontLoaded();
+        },
+        inactive: function () { //字体预加载失败，无效字体或浏览器不支持加载
+          console.log('inactive: timeout');
+          fontLoaded();
+        },
+        timeout: 5000 // Set the timeout to two seconds
+      });
+    }
+  }
+
+  function asyncErr(){
+    console.warn('script load from CDN failed, will load local script')
+  }
+
+  // load webfont-loader async, and add callback function
+  function async(u, cb, err) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (cb) { o.addEventListener('load', function (e) { cb(null, e); }, false); }
+    if (err) { o.addEventListener('error', function (e) { err(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+
+  var asyncLoadWithFallBack = function(arr, success, reject) {
+      var currReject = function(){
+        reject()
+        arr.shift()
+        if(arr.length)
+          async(arr[0], success, currReject)
+        }
+
+      async(arr[0], success, currReject)
+  }
+
+  asyncLoadWithFallBack([
+    "https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js", 
+    "https://cdn.bootcss.com/webfont/1.6.28/webfontloader.js",
+    "/lib/webfontloader.min.js"
+  ], asyncCb, asyncErr)
+</script>        
+        <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
+        <div class="container container-unloaded">
+            <main class="main post-page">
+    <article class="article-entry">
+        <h1 id="读书笔记——卫星工程概论"><a href="#读书笔记——卫星工程概论" class="headerlink" title="读书笔记——卫星工程概论"></a>读书笔记——卫星工程概论</h1><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>​    </p>
+<p>在第一节空间概论课上，老师提出了保持每周阅读空间科学相关书籍的要求，由于同时还有让我们构思小卫星创意的任务，我选择了卫星工程概论这本书。在获取这本书的时候还有一个小插曲，就是这本书已经接近绝版。</p>
+<p>​    之所以在此整理之前的笔记，是为了完成大作业，也是为了对这本书中专业知识有一个系统性的总结，为之后的学习和工作提供一些专业基础知识，借此契机我得以再次全面的审视这个本书，领悟这本书中想传达的一些“思想”。希望对未来的自己一些些用处。</p>
+<h1 id="第一章——概论"><a href="#第一章——概论" class="headerlink" title="第一章——概论"></a>第一章——概论</h1><p>​        发射的航天器中卫星绝大多数，航天技术将卫星转化为直接生产力和国防实力。</p>
+<h2 id="航天与卫星工程"><a href="#航天与卫星工程" class="headerlink" title="航天与卫星工程"></a>航天与卫星工程</h2><h3 id="航天与航天系统"><a href="#航天与航天系统" class="headerlink" title="航天与航天系统"></a>航天与航天系统</h3><p>​        航天包括航天技术、空间应用、空间科学三大部分。</p>
+<ol>
+<li>​        航天技术提供手段和保障。</li>
+<li>​        空间应用开发空间资源，利用空间独特的资源可以获得现代社会三大资源：信息、材料、能源。空间资源的利用现在常见的是见下表。</li>
+<li>​       空间科学是对宇宙空间现象与规律的探索。</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th align="left">独特的环境</th>
+<th>产品</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">利用微重力环境</td>
+<td>新材料和新生物制品</td>
+</tr>
+<tr>
+<td align="left">利用空间高远位置</td>
+<td>获取遥感信息、信息传输</td>
+</tr>
+</tbody></table>
+<p>​        航天系统包括</p>
+<ol>
+<li>航天器：在大气层外执行任务的飞行器，如人造地球卫星，载人航天器，空间探测器。</li>
+<li>航天运输系统：运送航天器人员和物资的飞行器系统，如运载器（运载火箭、航天飞机），运输器（往返运送人员物资的飞行器），轨道机动飞行器和轨道转移飞行器。</li>
+<li>航天发射场系统：测试区，发射区，发射指挥控制中心，综合测量设施，勤务和保障设施。</li>
+<li>航天测控网系统：对运输系统，航天器进行跟踪，测量，指挥，的综合系统。</li>
+<li>应用系统：航天器的用户系统，卫星的地面应用系统，载人航天器的地面应用系统，空间探测器的空间应用系统。</li>
+</ol>
+<p>航天系统具有大工程系统的特点：规模大，投资大，周期大，风险大，社会收益广泛可观。其组织管理要用系统组织方法，目前世界上为数不多的国家具有完善的航天系统。</p>
+<h3 id="航天技术与技术卫星"><a href="#航天技术与技术卫星" class="headerlink" title="航天技术与技术卫星"></a>航天技术与技术卫星</h3><p>​        航天技术又叫做空间技术是一门综合性工程技术，主要指用于航天系统特别是航天器和航天运输系统的技术。</p>
+<h3 id="卫星应用与卫星应用系统"><a href="#卫星应用与卫星应用系统" class="headerlink" title="卫星应用与卫星应用系统"></a>卫星应用与卫星应用系统</h3><p>​        卫星应用是指利用卫星技术以及其开发的空间资源在国民经济、和国防建设、文化建设和科学研究等领域的各种应用技术的统称。卫星应用是航天技术转换为直接生产力和国防实力的主要途径。</p>
+<p>​        卫星的主要分类的应用如下表</p>
+<table>
+<thead>
+<tr>
+<th>卫星的技术应用分类</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>卫星通信</td>
+<td>单频段卫星、多频段综合卫星、国际通信卫星、区域通信卫星</td>
+</tr>
+<tr>
+<td>卫星遥感</td>
+<td>卫星气象遥感、卫星海洋遥感、卫星资源遥感、卫星侦察</td>
+</tr>
+<tr>
+<td>卫星导航（定位）</td>
+<td>非静止轨道卫星、静止轨道卫星</td>
+</tr>
+<tr>
+<td>卫星空间科学</td>
+<td>空间物理观测、空间天文观测、空间微重力实验技术</td>
+</tr>
+</tbody></table>
+<p>​        卫星的实际的应用需要依靠一个系统实现，是一个星地一体的系统。由人造卫星和地面系统组成的大工程系统。</p>
+<h2 id="人造卫星的分类和应用"><a href="#人造卫星的分类和应用" class="headerlink" title="人造卫星的分类和应用"></a>人造卫星的分类和应用</h2><p>​        人造卫星是至少绕地球一圈的无人航天器。</p>
+<p>​        按用途分可以分为科学卫星、技术试验卫星和应用卫星三大类。</p>
+<p>​        科学卫星包括：</p>
+<ol>
+<li>空间物理探测卫星：直接对空间物理现象和过程进行探测研究活动的卫星，形成新的学科——空间物理学</li>
+<li>天文卫星：对宇宙天体以及其他空间物质进行观测的卫星，不受大气层影响，形成了新的学科——空间天文学</li>
+<li>微重力科学实验卫星：利用微重力环境对各种物质行为特征进行研究，包括物理化学生物材料等，形成新的学科——空间微重力科学</li>
+</ol>
+<p>​        技术试验卫星是指试验新技术的卫星。</p>
+<p>​        应用卫星包括：</p>
+<ol>
+<li>通信卫星：实现地面与地面，地面与航天器间的通信，这当中分军用民用，军用又分战略（司令部之间通信）与战术（作战单位之间通信）通信卫星。PS：一颗静止轨道通信卫星可以覆盖地球表面的40%，等间隔三颗静止轨道卫星可以实现除了两极地区外的全球通信</li>
+<li>气象卫星：一般分为极轨气象卫星和地球静止轨道气象卫星</li>
+<li>地球资源卫星</li>
+<li>海洋卫星</li>
+<li>导航卫星</li>
+<li>侦察卫星：分为照相侦察卫星、电子侦察卫星、海洋侦察卫星、导弹预警卫星</li>
+<li>小型卫星：新概念，强调系统集成、功能集成、充分发挥软件功能，广泛运用现代微电子技术，微机械技术，纳米技术。小卫星成本低，研发周期短，质量小，体积小，可以批产，前景广阔。PS:还可以用小型卫星组成卫星星座。</li>
+</ol>
+<h2 id="卫星系统的组成"><a href="#卫星系统的组成" class="headerlink" title="卫星系统的组成"></a>卫星系统的组成</h2><p>​        卫星是由若干个分系统组成的，按功能可以分为：有效载荷、保障系统。由此可以将卫星分为有效载荷和卫星平台两部分。值得注意的是卫星平台可以发展为卫星公用平台。</p>
+<h3 id="有效载荷"><a href="#有效载荷" class="headerlink" title="有效载荷"></a>有效载荷</h3><p>​        有效载荷是指卫星可以直接完成特定任务的仪器、设备，又称专用系统。有效载荷是卫星完成它的任务的部分，比如通信卫星的有效载荷就包括转发器和天线。有效载荷种类很多，可分为以下几类：</p>
+<ol>
+<li>科学探测和实验类有效载荷。</li>
+<li>信息获取类有效载荷。</li>
+<li>信息传输类有效载荷。</li>
+<li>信息基准类有效载荷</li>
+</ol>
+<h3 id="卫星平台"><a href="#卫星平台" class="headerlink" title="卫星平台"></a>卫星平台</h3><p>​        卫星平台是由保障系统组成的，可支持一种或者集中有效载荷的组合体。保障系统为有效载荷的工作提供支持、控制、指令和管理保障服务。卫星保障系统可以分为：</p>
+<ol>
+<li>结构与机构：用于支撑固定卫星，保证卫星的完整性，主要包括卫星承力结构、总装直属件、卫星机构等，具体设计采用分舱段模块化设计。</li>
+<li>热控制：用于控制卫星内外热交换过程，使其平衡温度处于要求范围内的卫星分系统。包括主动式和被动式两种。</li>
+<li>电源：产生变换储存电能的卫星分系统，长期运行的多采用太阳能电池和蓄电池联合供电。</li>
+<li>姿态与轨道控制：包括姿态稳定和姿态机动两部分</li>
+<li>测控：遥测是用于采集星上参数，遥控是接收地面指令，或者直接由数据管理系统传送给星上仪器执行。</li>
+<li>数据管理:用于储存各种程序，采集、处理以及协调各个卫星分系统</li>
+<li>总体电路：用于整星供配电、信号转接、火工装置管理和设备间电连接</li>
+<li>返回系统：返回卫星独立出的一部分回收分系统</li>
+<li>压力控制（可选）</li>
+<li>数据传输（可选）</li>
+</ol>
+<h2 id="卫星和卫星工程特点"><a href="#卫星和卫星工程特点" class="headerlink" title="卫星和卫星工程特点"></a>卫星和卫星工程特点</h2><h3 id="卫星的主要特点"><a href="#卫星的主要特点" class="headerlink" title="卫星的主要特点"></a>卫星的主要特点</h3><p>​        特点主要表现在：</p>
+<ol>
+<li>运动方式：在高度真空的宇宙空间运行，有的不含动力装置和推进剂，有的含。</li>
+<li>环境条件：在发射时要经受严重的过载、振动、噪声和冲击环境；入轨后会经受高真空、强辐射、微重力、超低温的环境。卫星的难度在于既要求质量小、体积小、功耗小，又要能承受复杂恶劣的环境条件。</li>
+<li>长寿命高可靠：真正的卫星在轨后几年十几年都不能做任何补给，需要其由高可靠保障。</li>
+<li>自动化程度：现在卫星数据管理能力提高，卫星的自动化程度越来越高，自主控制能力越来越强。</li>
+<li>技术密集：各个学科多个系统，是技术密集复杂的高技术产品。</li>
+<li>系统整体性：多个不同系统之间互相作用支持，“限制”。</li>
+</ol>
+<h1 id="第二章——地球空间环境特征及其对航天器的影响"><a href="#第二章——地球空间环境特征及其对航天器的影响" class="headerlink" title="第二章——地球空间环境特征及其对航天器的影响"></a>第二章——地球空间环境特征及其对航天器的影响</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>​        空间环境是诱发航天器异常和故障的主要原因之一。主要担心的方面有，高层大气的影响，微流星体撞击可能对航天器带来的威胁，宇宙线对航天器的辐射效应以及地球磁场对航天器姿态的影响。其中对航天器安全角度影响巨大的因素有微流星体，高能带电粒子剂量效应，而高层大气密度对轨道的测算影响比较大。特别的有，空间中的等离子体会对卫星充电，放电电弧对导致卫星故障。近年来对于空间环境对于航天器的影响研究主要集中在以下几个方面：</p>
+<ol>
+<li>飞行体充电</li>
+<li>单粒子反转事件</li>
+<li>原子氧对于飞行体表面的剥蚀作用</li>
+<li>空间碎片</li>
+</ol>
+<p>随着技术进步，面向空间环境的动态监测系统已在建立。</p>
+<h2 id="航天器轨道上的环境特征"><a href="#航天器轨道上的环境特征" class="headerlink" title="航天器轨道上的环境特征"></a>航天器轨道上的环境特征</h2><p>​    要根据航天器的任务去确定其会接触到的轨道高度，从而确定其面临的环境。</p>
+<p>​    特别的地球同步轨道上地球磁层扰动磁尾注入的高温等离子体是特有的恶劣环境。</p>
+<p>​    数千千米高度主要收到的是辐射带中的高能质子，重离子诱发的单粒子事件和剂量效应。</p>
+<p>​    1000千米以下的轨道主要是高层大气的影响，对航天器的阻力，氧原子对航天器表面的腐蚀，磁场较大，可以用来姿态控制，宇宙射线强度低，太空垃圾多集中于此。</p>
+<h3 id="中性大气"><a href="#中性大气" class="headerlink" title="中性大气"></a>中性大气</h3><p>​    太阳活动强的年份，氧原子密度高。</p>
+<h3 id="磁场"><a href="#磁场" class="headerlink" title="磁场"></a>磁场</h3><p>​    近地空间磁场主要起源于地球内部，类似偶极子的磁场以r^-3向外递减。可以参考国际参考磁场。太阳风中的等离子体形成一个包围地球磁层的腔体，称为<strong>磁层</strong>。磁层顶的向阳面像是一个被压扁的半圆最近点距离地球约10个地球半径，背阳方向类似于圆柱体，长度1000个地球半径。</p>
+<h3 id="等离子体"><a href="#等离子体" class="headerlink" title="等离子体"></a>等离子体</h3><p>​    等离子体是宇宙空间物质构成的主要形态，99%以上的物体都以<strong>等离子体</strong>的形式存在。电离层是最最近的，有太阳电磁辐射电离高层大气形成。</p>
+<h3 id="高能带电粒子"><a href="#高能带电粒子" class="headerlink" title="高能带电粒子"></a>高能带电粒子</h3><p>​    高能带电粒子主要来自太阳的太阳宇宙线、来自银河系的银河宇宙线，以及被地磁场捕获的辐射带电粒子组成。</p>
+<p>​    随太阳风向外运动的行星际磁场会对银河宇宙射线产生排斥作用，银河宇宙线几乎包含了所有元素周期表中的元素，质子占主要部分。</p>
+<p>​    太阳平静时不发射太阳宇宙线，在表面发生剧烈扰动时才发射，称为<strong>太阳质子事件</strong>，可分为八级，具有很强的<strong>随机性</strong>，目前还未掌握其规律，一级以上的太阳质子时间大约每年10次。</p>
+<p>​    需要注意的是，由于磁顶具有不对称性，磁层磁场也具有<strong>不对称性</strong>，低轨道航天器一圈中遇到的辐射带强度会有很大的差异。</p>
+<p>​    <strong>辐射带</strong>是地球磁场捕获的带电粒子组成的。是围绕地球的<strong>面包圈</strong>结构，也是<strong>不对称</strong>的。</p>
+<h3 id="电磁辐射"><a href="#电磁辐射" class="headerlink" title="电磁辐射"></a>电磁辐射</h3><p>​    空间的电磁辐射环境包括太阳的电磁辐射、地球和大气对太阳的电磁辐射的反射、地球大气本身的电磁辐射。</p>
+<p>​    <strong>太阳电磁辐射</strong>能谱很宽，能量主要集中在可见光和红外区，强度较稳定，对空间影响较小，但是紫外辐射、X射线、γ射线占能量份额小，但是强度变化大，且会被高层大气直接吸收，直接导致了高层大气温度与密度的变化。</p>
+<h3 id="流星体和空间碎片"><a href="#流星体和空间碎片" class="headerlink" title="流星体和空间碎片"></a>流星体和空间碎片</h3><p>​    流星体是宇宙空间中在太阳引力场作用下高速飞行的固体颗粒，相对地球的速度最高可达72km/s。地球对流星体的通量，地球对于流星体通量的作用有两方面：</p>
+<ol>
+<li>由于<strong>地球引力场的汇聚作用</strong>，近地空间流星体通量<strong>略大</strong></li>
+<li>由于<strong>地球的遮蔽</strong>，低轨道区域流星体通量<strong>减小将近一半</strong></li>
+</ol>
+<p>​    流星体分为两部分：</p>
+<ol>
+<li>偶现流星体，均匀的分布在宇宙空间，满足质量谱</li>
+<li>流星体群，密集的在母彗星轨道附近，地球穿越母彗星轨道时离得近，流星体通量大；在母彗星靠近太阳的时候接近，流星体通量大（有很多含冰物质会大量抛洒）</li>
+</ol>
+<p>​    空间碎片，废弃的航天器残骸和他们因爆炸碰撞产生的碎片。空间碎片数量近年来日益增多。多分布在航天器多的低轨道和地球同步轨道区域，低轨道区高层大气阻力使得碎片坠落消失，由于面积比质量与尺度成反比，<strong>越小的碎片坠落越快</strong>。</p>
+<h2 id="空间环境对航天器的影响"><a href="#空间环境对航天器的影响" class="headerlink" title="空间环境对航天器的影响"></a>空间环境对航天器的影响</h2><p>下表很好的总结了空间环境对航天器的影响</p>
+<p><img src="/2021/01/14/%E3%80%8A%E5%8D%AB%E6%98%9F%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%AE%BA%E3%80%8B%E7%AC%94%E8%AE%B0%E5%8F%8A%E5%BF%83%E5%BE%97/IMG_1939.JPG"></p>
+<h1 id="第四章——卫星轨道"><a href="#第四章——卫星轨道" class="headerlink" title="第四章——卫星轨道"></a>第四章——卫星轨道</h1><h2 id="概述-1"><a href="#概述-1" class="headerlink" title="概述"></a>概述</h2><p>卫星轨道与自然天体间轨道有不同也有相同。</p>
+<ol>
+<li>卫星人为发射，其运动初值往往由轨道设计给定。</li>
+<li>自然天体间距离大，相互作用可视为质点间的万有引力。但是卫星，除了地球质点引力外，还要受到非球形引力，地球大气阻力，太阳辐射压力，日、月引力等。</li>
+<li>卫星运动角速度大。</li>
+<li>卫星可以人为施加控制力，改变轨道何运动规律。</li>
+</ol>
+<p>任务分析根据卫星工程的总任务，通过轨道控制方法，计算星载推进剂的需要量，确定变轨策略，对返回式的卫星给出满足返回条件的运行轨道。</p>
+<p>而这其中的关键就是要精准的测算出卫星轨道，前提是掌握引起轨道变化的原因，包括高层大气的密度，测量地球引力场等。</p>
+<h2 id="卫星轨道力学"><a href="#卫星轨道力学" class="headerlink" title="卫星轨道力学"></a>卫星轨道力学</h2><h3 id="天球"><a href="#天球" class="headerlink" title="天球"></a>天球</h3><p>天球就是一个以地球为球心的假想球面。</p>
+<ol>
+<li>天赤道：地球赤道面和天球的交线</li>
+<li>黄道：地球公转平面和天球的交线（太阳在黄道上运动，一年转一圈）</li>
+<li>春分点：天赤道和黄道面在天球上的交点之一</li>
+</ol>
+<p>地球第一赤道坐标系：X-Y平面为赤道面，X轴指向春分点，Z轴指向北天极，X-Y-Z为右手法则的直角坐标系。利用球坐标，卫星到地心的距离是r，α为赤经，δ为赤纬。</p>
+<p>地球球面固连坐标系：坐标系与地球固连，与地球一起自转，是非惯性系。卫星以球坐标表示：r为地心距，φ为地心纬度，λ为地理纬度。是<strong>非惯性系</strong></p>
+<p>地心第二赤道坐标系：<strong>惯性系</strong>，X轴在赤道面内，指向某一时刻的格林尼治子午圈。</p>
+<p>测站球面坐标系：<strong>非惯性系</strong>与地球古里安，坐标原点为测控站，当地水平面作为基本平面，用球坐标表示卫星位置，ρ为测控站至卫星的距离，A为方位角（该站正北方向按顺时针方向计量），E为仰角。</p>
+<h2 id="卫星运动方程"><a href="#卫星运动方程" class="headerlink" title="卫星运动方程"></a>卫星运动方程</h2><p>​    卫星在轨道上初始终受着空间环境各种摄动力的作用。这些摄动力有：地球形状非球形和质量不均匀产生的附加引力，高层大气的气动力，太阳、月球的引力，以及太阳光照射压力等。在摄动力作用下，卫星轨道不再遵循二体轨道，其周期、偏离率、升交点赤经和倾角不断地变化着。虽然这些摄动力约为地球中心引力的十万分之一，但长时间的作用使卫星轨道偏离卫星应用任务的要求。必须采取轨道保持措施，这样又导致消耗卫星的燃料。因此，轨道摄动直接影响卫星的寿命。但是，另一方面可利用某些摄动，使卫星轨道具有特殊的性质，很有利于卫星应用任务的实践。</p>
+<p>​    在分析天体（地球、太阳、月球）对卫星的引力作用时，常应用引力位函数（或称势函数），即引力场在空间任何一点的位函数U，处在该点上单位质量的卫星受到的引力F是:</p>
+<p>​    F=grad U</p>
+<p>​    此位函数与坐标系的选择无关，弓用较方便。如天体的质量m集中于一点时，它的位函数是:</p>
+<p>​    Uo=Gm/R<br>​    式中，G为引力常数：r是集中点到空间某点的距离。均匀质量的圆球天体对外部各点的位函数与整个球体质量集中于中心时的位函数相同，它的梯度方向总是指向球中心，这就是二体问题的基础。当考虑地球、日、月等摄动力时，位函数有两部分。</p>
+<p>​    U=U+R<br>​    后者R是摄动力的位函数，称为摄动函数。卫星的运动方程为<br>​    I’’=-Gm*<strong>r</strong>/r^3+gardR<br>​    当摄动力不存在势时，将直接用摄动加速表示摄动力的作用。在叙述各种摄动函数的形式及其对卫星运动的影响之前，先推导卫星的摄动方程。根据所研究的问题，运动方程式（6．1)的具体形式各不相同，可直接用摄动力表示或用摄动函数表示，轨道参数可以表示成球坐标的形式或轨道要素。如将卫星的喷气推力代替摄动力，这些方程就是卫星的控制方程。下文中各种作用力都月化为作用在单位卫星质量上的力，相当于加速度。</p>
+<p>​    用球坐标表示地球形状和质量的不均匀性比较方便、直观。研究地球引力的摄动函数及其对卫星的运动的影响，常用球坐标表示卫星的运动方程。在赤道惯性坐标系OXYZ中，卫星位置的球坐标是(r, α，φ)，r是卫星的地心距，(α，φ)是卫星的赤经、赤纬。卫星在固连于地球坐标系中的球坐标是(r, λ，φ)，后两者是卫星的地心经、纬度。定义以卫星质心为原点的三个正交单位矢量：Ur沿卫星地心距方向；Uα沿卫星所在纬度圈的切线方向，向东为正；Uφ沿卫星所在子午圈的切线方向。以地心为原点的球面坐标系的三根坐标轴Oξ,Oη,Oζ分别与Ur,Uα,Uφ平行，Oξ与地心距r的方向一致，显然，此坐标系跟随卫星在空间转动。</p>
+<h2 id="几种常用的轨道"><a href="#几种常用的轨道" class="headerlink" title="几种常用的轨道"></a>几种常用的轨道</h2><ol>
+<li>太阳同步轨道：轨道地面高度不会大于6000km</li>
+<li>回归轨道：星下点轨迹周期性重叠的轨道</li>
+<li>冻结轨道：在考虑地球引力场非球星摄动J2,J3项的情况下，保持轨道偏心率和近地点辐角不变的轨道称为冻结轨道</li>
+<li>地球静止轨道：对于地面上任意一个观测者而言，静止卫星对其的仰角和方位角始终不变。对于地球静止轨道，我们需要知道，由于<strong>初始值偏差</strong>和<strong>摄动因素</strong>都会引起位置的漂移，所以实际应用中只要将漂移控制在一个小的范围内。</li>
+</ol>
+<h2 id="GPS轨道和定位原理"><a href="#GPS轨道和定位原理" class="headerlink" title="GPS轨道和定位原理"></a>GPS轨道和定位原理</h2><p>​        全球定位系统是应用十分广泛的导航定位系统。有21颗工作星，3颗备份星。共分布在6个轨道面内，一个轨道面内有四颗星。</p>
+<p>​        主要参数指标有：</p>
+<ol>
+<li><p>轨道周期12h</p>
+</li>
+<li><p>高度20190.75km</p>
+</li>
+<li><p>轨道倾角55°</p>
+</li>
+<li><p>圆形轨道</p>
+<p>保证了每个地点每个时刻都可以<strong>同时接收到4颗以上</strong>卫星。</p>
+<p>利用卫星伪码测距时间，通过比对，得到用户与卫星的距离，计算得到大气传输时延和从用户端得到卫星坐标列得四个方程。解出用户的位置坐标，XYZ，和用户系统与星上GPS系统的时差一共四个未知数。</p>
+</li>
+</ol>
+<h2 id="双星定位原理（迭代过程）"><a href="#双星定位原理（迭代过程）" class="headerlink" title="双星定位原理（迭代过程）"></a>双星定位原理（迭代过程）</h2><p>​    用两颗静止卫星，经度最好相差60°，可组成一个区域性简单定位系统。系统由中心站和两颗星组成。</p>
+<p><img src="/2021/01/14/%E3%80%8A%E5%8D%AB%E6%98%9F%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%AE%BA%E3%80%8B%E7%AC%94%E8%AE%B0%E5%8F%8A%E5%BF%83%E5%BE%97/46E74D1EA2153EE14F421654A51EBBB7.png" alt="46E74D1EA2153EE14F421654A51EBBB7"></p>
+<p>利用时间差分辨测得:L1、L2</p>
+<p>L1=2（ZS1+S1Y）</p>
+<p>L2=ZS1+S1Y+ZS2+S2Y</p>
+<p>卫星到地面中心得距离ZS1和ZS2可以通过卫星运行轨道求得，于是可以解出YS1和YS2，其集合是一个圆，分别在南北半球有一个交点。但是地球是<strong>形状复杂体</strong>，用户只要知道高程，就可以知道确切位置，但是要知道高程就需要先知道用户的位置，再通过高程图得到。因此实际的判断过程是一个<strong>迭代过程</strong>。</p>
+<h2 id="卫星组网"><a href="#卫星组网" class="headerlink" title="卫星组网"></a>卫星组网</h2><p>​    除了静止卫星之外，其他轨道上运行得卫星相对地面都是移动的。为了给地面用户提供不间断的服务，就需要卫星组网。卫星群采用等高度、等倾角得圆轨道组成轨道网，完成特定的使命，这种轨道的选择成为星座设计。</p>
+<h3 id="单星覆盖和极轨道全球覆盖"><a href="#单星覆盖和极轨道全球覆盖" class="headerlink" title="单星覆盖和极轨道全球覆盖"></a>单星覆盖和极轨道全球覆盖</h3><p>​    单星对地面的覆盖是指在该区域内，观察到该星的仰角大于规定值E，称为<strong>卫星覆盖</strong>。</p>
+<h3 id="美国摩托罗拉公司的“铱”星星座"><a href="#美国摩托罗拉公司的“铱”星星座" class="headerlink" title="美国摩托罗拉公司的“铱”星星座"></a>美国摩托罗拉公司的“铱”星星座</h3><p>​    低轨道全球个人卫星移动通信系统。由于不是静止轨道，轨道高度低，信号路径损耗小。且对两极地区有很好的覆盖。</p>
+<h3 id="中继卫星测距原理"><a href="#中继卫星测距原理" class="headerlink" title="中继卫星测距原理"></a>中继卫星测距原理</h3><p>​    用地面测量站测量低轨道卫星，存在用小弧度推算整个椭圆精度不易提高的问题。于是可以用静止轨道的中继卫星完成这个任务。</p>
+<h2 id="轨道测定"><a href="#轨道测定" class="headerlink" title="轨道测定"></a>轨道测定</h2><p>​    确定卫星精确轨道的过程包括初轨确定，轨道改进。<strong>初轨确定</strong>是通过少量的测量数据直接计算出轨道根数。<strong>轨道改进</strong>，是在初步结果的基础上，利用大量的观测值，改进初值，进而得到最优的估计的精确轨道。</p>
+<h3 id="初轨确定"><a href="#初轨确定" class="headerlink" title="初轨确定"></a>初轨确定</h3><p>​    在火箭制导精度较高时，可以通过星箭分离的理论轨道作为轨道初始。</p>
+<p>​    也可以通过以下方法求解</p>
+<ol>
+<li>已知三个时刻卫星的赤经，赤纬</li>
+<li>已知两个时刻的卫星在第一赤道坐标系中的坐标</li>
+<li>已知一个时刻卫星位置的3个坐标和同时的速度3个分量</li>
+</ol>
+<h3 id="轨道改进"><a href="#轨道改进" class="headerlink" title="轨道改进"></a>轨道改进</h3><p>​    一般有，最小二乘法和卡尔曼滤波法，基于的运动方程也有两种：根数变化的拉格朗日方程，和直角运动方程。</p>
+<p>​    卫星有效载荷就是装载在卫星上要实现特定任务的仪器设备以及分系统。</p>
+<h3 id="卫星有效载荷的分类"><a href="#卫星有效载荷的分类" class="headerlink" title="卫星有效载荷的分类"></a>卫星有效载荷的分类</h3><h4 id="科学探测和实验类"><a href="#科学探测和实验类" class="headerlink" title="科学探测和实验类"></a>科学探测和实验类</h4><p>​    有效载荷用于探测空间环境，观测天体，进行空间实验一类。</p>
+<h4 id="信息获取类"><a href="#信息获取类" class="headerlink" title="信息获取类"></a>信息获取类</h4><p>​    有效载荷用于对地观测的各种遥感器一类。</p>
+<h4 id="信息传输类"><a href="#信息传输类" class="headerlink" title="信息传输类"></a>信息传输类</h4><p>​    有效载荷用于中继通信或单项信息传输一类。</p>
+<h4 id="信息基准类"><a href="#信息基准类" class="headerlink" title="信息基准类"></a>信息基准类</h4><p>​    有效载荷提供空间基准和时间基准的一类。（导航卫星上的高稳定频标，重力场测量卫星上的激光角反射器）</p>
+<h3 id="卫星有效载荷设计的一般原则"><a href="#卫星有效载荷设计的一般原则" class="headerlink" title="卫星有效载荷设计的一般原则"></a>卫星有效载荷设计的一般原则</h3><ol>
+<li><p>正确理解用户需求，正确确定总体技术指标（用户提出的要求往往不完全针对载荷，需要由设计者转化为卫星的有效载荷目标）</p>
+</li>
+<li><p>认真研究限制条件，科学地选择有效载荷方案。（比较时要注意<strong>量化</strong>不同因素赋予不同的权重，以满足用户需求为原则，并不是指标越高越好，技术可行性和经济性也应考虑在内）</p>
+</li>
+<li><p>系统的观点，合理分配技术指标。（进行系统性能综合分析）</p>
+</li>
+<li><p>通过仿真和试验来验证优化设计。（多次<strong>迭代</strong>，设计-验证-修改 循环）</p>
+</li>
+</ol>
+<h3 id="卫星有效载荷设计的一般技术要求"><a href="#卫星有效载荷设计的一般技术要求" class="headerlink" title="卫星有效载荷设计的一般技术要求"></a>卫星有效载荷设计的一般技术要求</h3><h4 id="对环境的适应性"><a href="#对环境的适应性" class="headerlink" title="对环境的适应性"></a>对环境的适应性</h4><p>​    能够适应卫星发射，在轨运行（有的要求可返回）的工作环境</p>
+<ol>
+<li><p>适应力学环境：发射阶段的振动、冲击、过载、噪声。进行模态分析，<strong>防止共振</strong>。</p>
+</li>
+<li><p>适应失重状态要求：一些天线，遥感器扫描机构在失重环境下与地面情况不同，要专门调试。</p>
+</li>
+<li><p>适应真空状态要求：真空放电，二次电子倍增效应，冷焊等问题</p>
+</li>
+<li><p>适应温度变化要求：热控控制卫星有效载荷内温度场</p>
+</li>
+<li><p>适应空间辐射要求：单粒子翻转和锁定，采取抗辐射加固措施。</p>
+<p>​    </p>
+</li>
+</ol>
+<h4 id="质量、体积、功耗与可靠性要求"><a href="#质量、体积、功耗与可靠性要求" class="headerlink" title="质量、体积、功耗与可靠性要求"></a>质量、体积、功耗与可靠性要求</h4><p>​    一般来说有效载荷减少1kg运载火箭起飞质量可以减少1-2t，减少质量对于提升性能价格比十分重要。</p>
+<p>​    增加功率转换效率，功率放大器是能耗大户，为转换的能量全部变为增加热控负担和影响电子部件可靠性的热能。</p>
+<p>​    卫星一般不可在轨维修，对高可靠和长寿命提出了更高的要求。</p>
+<h4 id="满足与卫星平台之间的关系"><a href="#满足与卫星平台之间的关系" class="headerlink" title="满足与卫星平台之间的关系"></a>满足与卫星平台之间的关系</h4><p>​    接口关系，设备尺寸，安装尺寸，质心，转动惯量，功耗，供电电压，机械结构，热结构，电接口，EMC要求。</p>
+<h4 id="必须满足与应用系统之间的特定关系"><a href="#必须满足与应用系统之间的特定关系" class="headerlink" title="必须满足与应用系统之间的特定关系"></a>必须满足与应用系统之间的特定关系</h4><p>​    有效载荷的设计必须与地面应用系统设计综合考虑，星、地设备之间合理分配指标。特别注意电离层的影响，和电磁兼容性要求问题。</p>
+<p>以下是具体不同卫星类型对应的有效载荷举例</p>
+<h3 id="通信卫星有效载荷"><a href="#通信卫星有效载荷" class="headerlink" title="通信卫星有效载荷"></a>通信卫星有效载荷</h3><p>​    由天线和转发器两个分系统组成。</p>
+<h4 id="转发器分系统"><a href="#转发器分系统" class="headerlink" title="转发器分系统"></a>转发器分系统</h4><p>​    宽频带收发信机</p>
+<h4 id="天线分系统"><a href="#天线分系统" class="headerlink" title="天线分系统"></a>天线分系统</h4><p>​    通信天线，用于通信信号的收发，有时也用于测控信号的收发。</p>
+<h3 id="地球资源卫星有效载荷"><a href="#地球资源卫星有效载荷" class="headerlink" title="地球资源卫星有效载荷"></a>地球资源卫星有效载荷</h3><p>​    地球资源卫星是用于地球资源探测和环境检测的遥感卫星。多为光学成像遥感器（SAR除外）。</p>
+<h4 id="光学成像遥感器"><a href="#光学成像遥感器" class="headerlink" title="光学成像遥感器"></a>光学成像遥感器</h4><p>​    性能参数包括：工作谱段，分辨率，调制传递参数，信噪比。</p>
+<p>​    主要设计考虑：根据工作谱段和光谱分辨率的要求，选择合理的光学系统方案。</p>
+<h1 id="第六章——卫星结构与机构"><a href="#第六章——卫星结构与机构" class="headerlink" title="第六章——卫星结构与机构"></a>第六章——卫星结构与机构</h1><h2 id="概述-2"><a href="#概述-2" class="headerlink" title="概述"></a>概述</h2><h3 id="作用与功能"><a href="#作用与功能" class="headerlink" title="作用与功能"></a>作用与功能</h3><p>卫星结构：支撑卫星中有效载荷和其他分系统的骨架。</p>
+<p>卫星机构：卫星上产生动作的部件。</p>
+<p>两者都属于机械结构，最初两者常作为一个分系统研究，随着现代卫星发展，机构多样化、复杂化，现在将两者分开研究。</p>
+<p>​    </p>
+<p>卫星结构主要功能：</p>
+<ol>
+<li>承受和传递卫星上所有载荷，保证结构本身在载荷的作用下不发生不容许的损坏现象。</li>
+<li>为卫星有效载荷和其他分系统提供所需的安装空间、安装位置和安装方式，把卫星所有有效载荷和各分系统连接成一个整体；所提供的安装可满足相应有效载荷和个分系统的工作要求，便于地面装卸等操作。</li>
+<li>提供环境保护。</li>
+<li>提供刚性支承条件。</li>
+<li>提供绝热性能，导电，绝缘性能。</li>
+</ol>
+<p>卫星机构的功能并不明确。</p>
+<h3 id="组成和形式"><a href="#组成和形式" class="headerlink" title="组成和形式"></a>组成和形式</h3><h4 id="卫星结构的组成和形式"><a href="#卫星结构的组成和形式" class="headerlink" title="卫星结构的组成和形式"></a>卫星结构的组成和形式</h4><ol>
+<li>主结构：形式有中心承力筒式、构架式、舱体式。要满足刚度要求，基频要求，考虑卫星发射时稳态和瞬态载荷来设计主结构。</li>
+<li>次结构：主结构上分支出来的部分。展开式太阳能电池阵结构和某些天线结构。特别的，次结构还要考虑<strong>分系统间相互干扰</strong>，<strong>空间位置稳定性</strong>等因素。</li>
+</ol>
+<p>特别的：</p>
+<p>太阳能电池阵的结构部分一般作为卫星结构来考虑，在<strong>功率较小</strong>的卫星中，往往把太阳能电池阵结构与卫星的外壳结构合在一起，称为<strong>体装式太阳能电池阵</strong>。<strong>大多数卫星</strong>都是用<strong>展开式太阳能电池阵</strong>。</p>
+<p>一些<strong>复杂的天线结构</strong>，特别是反抛物面结构的天线，也可以<strong>当作卫星结构</strong>来考虑。</p>
+<h4 id="卫星机构的组成和形式"><a href="#卫星机构的组成和形式" class="headerlink" title="卫星机构的组成和形式"></a>卫星机构的组成和形式</h4><p>卫星可展开结构驱动在此前的折叠卫星中有研究。</p>
+<p>可展开结构都存在有执行运动的环节,虽然其运动形式多样,执行机构千差万别,但驱动形式却有章可循,大体上可分为以下四类:</p>
+<h5 id="电机驱动"><a href="#电机驱动" class="headerlink" title="电机驱动:"></a>电机驱动:</h5><p>这类结构的原动件为各类电机,一般集中安置于减速机构之中,布置于所设计的运动环节,由电机直接驱动主动件或通过传动使结构展开和收拢,根据电机的布置和机构特性,可使结构实现同步展开,这类驱动方式应用比较多。</p>
+<p>这类驱动形式的特点是便于控制,展开过程平稳,展开到位时的冲击较小,展开精度高。但由于引入了热控、电源、电控以及电机本身等多项因素,使得设计复杂,可靠性指标难于提高。</p>
+<h5 id="弹簧驱动"><a href="#弹簧驱动" class="headerlink" title="弹簧驱动:"></a>弹簧驱动:</h5><p>  这类结构的原动件为各类弹簧释能装置,其中大致为两类。</p>
+<p>一类是将强力储能弹簧集中安装于阻尼减速机构(通称为弹簧展开机构)中,释能时通过减速机构输出平稳的运动,从而驱动主动件或通过传动使结构展开和收拢。另一类是直接在结构接点或杆件中点处按特定要求设置扭簧,折叠时扭簧受预应力存贮弹性变形能,当结构解锁后,扭簧释放弹性能量,驱动结构同步展开。</p>
+<p>弹簧驱动形式的特点是系统相对独立,可靠性高。但展开过程不易控制,展开到位后有冲击,平稳性不好。</p>
+<p>针对这样的缺点,目前出现一类改进型,它以强力弹簧为大型结构的原动力,另以电机驱动反向牵引控制,以减小弹簧释能时的冲击。</p>
+<h5 id="自伸展驱动"><a href="#自伸展驱动" class="headerlink" title="自伸展驱动:"></a>自伸展驱动:</h5><p>  这类结构是采用特定的柔性材料,在其弹性变形范围内约束收拢,待去除约束后自恢复原状。另外也可利用记忆合金等特殊元件和特殊材料制成一部分构件、按要求置于某些特定结构位置,使其在特定环境下可按设计要求自动展开,如美国NASAJPL和MIT开发的整体展开应用技术。</p>
+<h5 id="其他驱动"><a href="#其他驱动" class="headerlink" title="其他驱动:"></a>其他驱动:</h5><p>除以上的展开驱动方式外,还有充气式展开结构、主动系控制展开的操作臂的展开驱动方式。</p>
+<h4 id="机构的控制方式"><a href="#机构的控制方式" class="headerlink" title="机构的控制方式"></a>机构的控制方式</h4><ol>
+<li>开路控制方式：由机构控制系统输入指令控制机构运动，通过反馈装置在特定的状态下对系统的输入调整控制系统输入的指令。</li>
+<li>闭路控制方式：机构的输出信号要不停的反馈到控制系统，将信号实时与要求的方向速度对比进行对比，进而调整输入。</li>
+</ol>
+<p>开路控制简单，常用。</p>
+<p>闭路控制复杂，对位置和速度精度要求高时使用。</p>
+<h3 id="研究阶段和步骤"><a href="#研究阶段和步骤" class="headerlink" title="研究阶段和步骤"></a>研究阶段和步骤</h3><p>略</p>
+<h3 id="卫星机构与机构的材料"><a href="#卫星机构与机构的材料" class="headerlink" title="卫星机构与机构的材料"></a>卫星机构与机构的材料</h3><h3 id="对材料的要求"><a href="#对材料的要求" class="headerlink" title="对材料的要求"></a>对材料的要求</h3><ol>
+<li>小质量。</li>
+<li>机械性能：强度高、模量高、韧性好。</li>
+<li>物理性能要求：结合需求考虑，参数有膨胀系数、比热、导热率、导电性等</li>
+<li>耐空间轨道环境要求。</li>
+<li>材料真空出气要求：指的是要限制材料在真空环境下的出气，这可能会影响其它系统。</li>
+<li>制造工艺性能要求：要能造出来，工艺好坏决定了材料性能的发挥，还要考虑制造成本，周期。</li>
+</ol>
+<p>1和2需要结合考虑，考虑比模量和比强度。</p>
+<h1 id="第七章——卫星热控制"><a href="#第七章——卫星热控制" class="headerlink" title="第七章——卫星热控制"></a>第七章——卫星热控制</h1><h2 id="概述-3"><a href="#概述-3" class="headerlink" title="概述"></a>概述</h2><p>卫星热控制就是通过对卫星内外的热交换过程的控制，保障星体各个部位及星上仪器设备在整个任务期间都处于正常工作的温度范围。</p>
+<p>热控应该分阶段：</p>
+<ol>
+<li>地面段：卫星处于部分仪器预热，外部环境处于地面状态。</li>
+<li>上升段：星体受气动加热（有无整流罩不同）</li>
+<li>轨道段：空间环境，空间外热流、微重力、低温、空间粒子辐射，同时星上的仪器设备的结构特点和工作状态引起的热量产生和传递也有影响。</li>
+<li>返回端：严重气动加热。</li>
+</ol>
+<p>每个阶段的热环境和热状态是不同的。</p>
+<p>基本空间环境：</p>
+<ol>
+<li>真空和低温：高真空度环境的热量亿辐射的方式排散。除了太阳和附近的行星，银河系以及系外的辐射能力很小且各向同性，相当于3k的绝对黑体，成为宇宙空间热沉。</li>
+<li>地球大气环境：随地球高度增加按照指数规律降低。</li>
+<li>太阳辐射：热力学主要考虑0.18-40μm之间的可变成热能部分，占太阳总辐射99.99%。来自太阳光球的红外辐射和可见光相当于6000k的黑体辐射。</li>
+</ol>
+<p>太阳常数：太阳在单位时间内投射到太阳一个天文单位并处于垂直射线方向的单位面积上的全部太阳辐射能。</p>
+<h2 id="航天器热控系统构建现状"><a href="#航天器热控系统构建现状" class="headerlink" title="航天器热控系统构建现状"></a>航天器热控系统构建现状</h2><p>​    对应用卫星来说，热控系统构建时需要更多地考虑低成本、技术成熟度与继承性等因素。鉴于此，应用卫星基本上都采用以被动热控为主、电加热主动热控为辅的传统热控系统。</p>
+<p>​    热控系统构建的主导思想为</p>
+<ol>
+<li>设计上利用构型布局、分区局部散热，即将大热耗设备都直接安装在散热面上进行散热， 散热面内一般采用热管进行等温化，必要时可采用正交热管网络，以适应热耗分布不均匀的情况， 提高散热面利用效率。</li>
+<li>设计过程中尽量优化调整各散热面的面积配比值（加权值），合理利用太阳辐照、地球反照与地球红外３种外热流，以便航天器能够在整个寿命周期内吸收的外热流总量变化最小，使得热控对电补偿功率的需求尽量小。</li>
+</ol>
+<p>随着航天器平台技术的不断发展以及新型载荷的不断出现，应用卫星也开始逐渐使用一些新型主动热控技术来解决自身面临的技术难题，比如实践十号返回式卫星已经成功应用泵驱单相流体回路技术。</p>
+<p><img src="/2021/01/14/%E3%80%8A%E5%8D%AB%E6%98%9F%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%AE%BA%E3%80%8B%E7%AC%94%E8%AE%B0%E5%8F%8A%E5%BF%83%E5%BE%97/image-20201220165000696.png" alt="image-20201220165000696"></p>
+<h2 id="嫦娥五号上的热控新系统"><a href="#嫦娥五号上的热控新系统" class="headerlink" title="嫦娥五号上的热控新系统"></a>嫦娥五号上的热控新系统</h2><p>​        </p>
+<p>探测器由着陆器、上升器、轨道器和返回器４部分组成。返回器热控设计要考虑不同阶段其多约束条件，着陆器上升器热控适合一体化管理。</p>
+<p>​    在返回器上构建出一种基于环路热管“热开关”的小型再入返回类航天器新型热控系统。即IMU工作时，通过３根预埋热管将产生的热量传递给环路热管，使得器内设备处于合适的温度水平。IMU存储时，利用环路热管的热二极管特性，阻断环路热管以减少舱内漏热量。</p>
+<p>​    针对月面采样短期任务特征，构建出一套以“泵驱小型单相流体回路热总线＋水升华器”为 核心的着陆上升组合体一体化热管理系统。</p>
+<h1 id="学习心得与反思"><a href="#学习心得与反思" class="headerlink" title="学习心得与反思"></a>学习心得与反思</h1><p>​    通过这一个学期的学习，我花了不少时间，获得许多，其中我自己认为比较重要的如下</p>
+<h2 id="卫星的概念"><a href="#卫星的概念" class="headerlink" title="卫星的概念"></a>卫星的概念</h2><p>​    首先我得以明确卫星的概念，卫星是至少绕地球一圈的无人航天器，通过携带不同的有效载荷完成不同的任务。</p>
+<h2 id="系统思想"><a href="#系统思想" class="headerlink" title="系统思想"></a>系统思想</h2><p>​    系统的思想我认为包含两部分。</p>
+<p>​    其一是针对一个项目，一个大系统可以分为不同的分系统，并且再次细分，各个分系统之间的平衡，最好是能用不同的指标量化，不同因素赋予不同的权重系统性能综合分析。</p>
+<p>​    另一个就是系统的组织方式。</p>
+<h2 id="研究对象的分类"><a href="#研究对象的分类" class="headerlink" title="研究对象的分类"></a>研究对象的分类</h2><p>​    在这之前我并没有想到研究对象的分类如此重要，就像机构和结构过去到现在的定义不同，我认为对于研究对象的研究可以打破在卫星工程这样的多学科工程中的学科隔阂。</p>
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><p>​    任何一项研究都需要一个明确的环境，正如因果律的追寻需要有一个明确的起点状态一样，不谈环境谈任务并没有意义。</p>
+<p>​    在卫星工程中需要考虑航天器在<strong>不同任务状态下</strong>面临的环境，其中有稳定的背景环境（类似于宇宙空间热沉、重力环境），一些随机事件（类似于太空碎片撞击、太阳黑子爆发等）。</p>
+<h2 id="科学对于技术的重要性"><a href="#科学对于技术的重要性" class="headerlink" title="科学对于技术的重要性"></a>科学对于技术的重要性</h2><p>​    卫星工程可以看成是一门技术，在整个学习过程中，我不难发现科学对于工程实践具有重大的指导意义，没有科学支持，技术寸步难行。</p>
+<h2 id="研究问题的角度"><a href="#研究问题的角度" class="headerlink" title="研究问题的角度"></a>研究问题的角度</h2><p>​    在研究问题中我们可以任务的不同需要，选择不同的坐标系，在研究角度的选择上也可以做类似方式。</p>
+<h2 id="合作"><a href="#合作" class="headerlink" title="合作"></a>合作</h2><p>​    “合作”包括人与人的合作，卫星与卫星的合作，以及卫星与地面系统的合作，好的合作绝对可以事半功倍。</p>
+<h2 id="递归与迭代"><a href="#递归与迭代" class="headerlink" title="递归与迭代"></a>递归与迭代</h2><p>​    递归与迭代广泛的应用在卫星定位上，而在在工程实践，卫星制造过程中不断地递归迭代也是提升产品性能和可靠度的重要方式。</p>
+<h2 id="理解需求"><a href="#理解需求" class="headerlink" title="理解需求"></a>理解需求</h2><p>​    正确理解用户需求是一个项目成功的前提，正确确定总体技术指标实现用户需求的保障，而这两者之间语言的转化极其重要。</p>
+<h2 id="反思"><a href="#反思" class="headerlink" title="反思"></a>反思</h2><p>​    这一个学期的阅读暴露了我许多问题，现在我将其列出来，希望以后能够改正。</p>
+<ol>
+<li>花的时间太少，过于碎片化。</li>
+<li>缺少知识的及时整理和反思</li>
+<li>在阅读专业知识，纵向深度不够，缺少研究的勇气和动力。</li>
+</ol>
+
+    </article>
+    <!-- license  -->
+    
+        <div class="license-wrapper">
+            <p>原文作者：<a href="http://example.com">yuexiaqiufeng</a>
+            <p>原文链接：<a href="http://example.com/2021/01/14/%E3%80%8A%E5%8D%AB%E6%98%9F%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%AE%BA%E3%80%8B%E7%AC%94%E8%AE%B0%E5%8F%8A%E5%BF%83%E5%BE%97/">http://example.com/2021/01/14/%E3%80%8A%E5%8D%AB%E6%98%9F%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%AE%BA%E3%80%8B%E7%AC%94%E8%AE%B0%E5%8F%8A%E5%BF%83%E5%BE%97/</a>
+            <p>发表日期：<a href="http://example.com/2021/01/14/%E3%80%8A%E5%8D%AB%E6%98%9F%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%AE%BA%E3%80%8B%E7%AC%94%E8%AE%B0%E5%8F%8A%E5%BF%83%E5%BE%97/">January 14th 2021, 3:17:00 pm</a>
+            <p>更新日期：<a href="http://example.com/2021/01/14/%E3%80%8A%E5%8D%AB%E6%98%9F%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%AE%BA%E3%80%8B%E7%AC%94%E8%AE%B0%E5%8F%8A%E5%BF%83%E5%BE%97/">January 14th 2021, 3:17:54 pm</a>
+            <p>版权声明：本文采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+        </div>
+    
+    <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2021/01/11/%E5%AF%92%E5%81%87%E8%AE%A1%E5%88%92/" title= "寒假画饼">
+                    <div class="prevTitle">寒假画饼</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
+    
+    
+    <!-- gitalk评论 -->
+
+    <!-- utteranc评论 -->
+
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
+    
+    
+
+    <!-- 评论 -->
+</main>
+            <!-- profile -->
+            
+        </div>
+        <footer class="footer footer-unloaded">
+    <!-- social  -->
+    
+    <div class="social">
+        
+    
+        
+            
+                <a href="mailto:2655720440@qq.com" class="iconfont-archer email" title=email ></a>
+            
+        
+    
+        
+            
+                <a href="//github.com/yuexiavqiufeng" class="iconfont-archer github" target="_blank" title=github></a>
+            
+        
+    
+        
+    
+        
+            
+                <span class="iconfont-archer qq" title=qq>
+                  
+                  <img class="profile-qr" src="/avatar/QR_CODE.PNG" />
+                </span>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+    </div>
+    
+    <!-- powered by Hexo  -->
+    <div class="copyright">
+        <span id="hexo-power">Powered by <a href="https://hexo.io/" target="_blank">Hexo</a></span><span class="iconfont-archer power">&#xe635;</span><span id="theme-info">theme <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank">Archer</a></span>
+    </div>
+    <!-- 不蒜子  -->
+    
+    <div class="busuanzi-container">
+    
+     
+    <span id="busuanzi_container_site_pv">PV: <span id="busuanzi_value_site_pv"></span> :)</span>
+    
+    </div>
+    
+</footer>
+    </div>
+    <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E5%8D%AB%E6%98%9F%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%AE%BA"><span class="toc-number">1.</span> <span class="toc-text">读书笔记——卫星工程概论</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">2.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0%E2%80%94%E2%80%94%E6%A6%82%E8%AE%BA"><span class="toc-number">3.</span> <span class="toc-text">第一章——概论</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%88%AA%E5%A4%A9%E4%B8%8E%E5%8D%AB%E6%98%9F%E5%B7%A5%E7%A8%8B"><span class="toc-number">3.1.</span> <span class="toc-text">航天与卫星工程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%88%AA%E5%A4%A9%E4%B8%8E%E8%88%AA%E5%A4%A9%E7%B3%BB%E7%BB%9F"><span class="toc-number">3.1.1.</span> <span class="toc-text">航天与航天系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%88%AA%E5%A4%A9%E6%8A%80%E6%9C%AF%E4%B8%8E%E6%8A%80%E6%9C%AF%E5%8D%AB%E6%98%9F"><span class="toc-number">3.1.2.</span> <span class="toc-text">航天技术与技术卫星</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%AB%E6%98%9F%E5%BA%94%E7%94%A8%E4%B8%8E%E5%8D%AB%E6%98%9F%E5%BA%94%E7%94%A8%E7%B3%BB%E7%BB%9F"><span class="toc-number">3.1.3.</span> <span class="toc-text">卫星应用与卫星应用系统</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%BA%E9%80%A0%E5%8D%AB%E6%98%9F%E7%9A%84%E5%88%86%E7%B1%BB%E5%92%8C%E5%BA%94%E7%94%A8"><span class="toc-number">3.2.</span> <span class="toc-text">人造卫星的分类和应用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%AB%E6%98%9F%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%BB%84%E6%88%90"><span class="toc-number">3.3.</span> <span class="toc-text">卫星系统的组成</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%89%E6%95%88%E8%BD%BD%E8%8D%B7"><span class="toc-number">3.3.1.</span> <span class="toc-text">有效载荷</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%AB%E6%98%9F%E5%B9%B3%E5%8F%B0"><span class="toc-number">3.3.2.</span> <span class="toc-text">卫星平台</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%AB%E6%98%9F%E5%92%8C%E5%8D%AB%E6%98%9F%E5%B7%A5%E7%A8%8B%E7%89%B9%E7%82%B9"><span class="toc-number">3.4.</span> <span class="toc-text">卫星和卫星工程特点</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%AB%E6%98%9F%E7%9A%84%E4%B8%BB%E8%A6%81%E7%89%B9%E7%82%B9"><span class="toc-number">3.4.1.</span> <span class="toc-text">卫星的主要特点</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0%E2%80%94%E2%80%94%E5%9C%B0%E7%90%83%E7%A9%BA%E9%97%B4%E7%8E%AF%E5%A2%83%E7%89%B9%E5%BE%81%E5%8F%8A%E5%85%B6%E5%AF%B9%E8%88%AA%E5%A4%A9%E5%99%A8%E7%9A%84%E5%BD%B1%E5%93%8D"><span class="toc-number">4.</span> <span class="toc-text">第二章——地球空间环境特征及其对航天器的影响</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0"><span class="toc-number">4.1.</span> <span class="toc-text">概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%88%AA%E5%A4%A9%E5%99%A8%E8%BD%A8%E9%81%93%E4%B8%8A%E7%9A%84%E7%8E%AF%E5%A2%83%E7%89%B9%E5%BE%81"><span class="toc-number">4.2.</span> <span class="toc-text">航天器轨道上的环境特征</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AD%E6%80%A7%E5%A4%A7%E6%B0%94"><span class="toc-number">4.2.1.</span> <span class="toc-text">中性大气</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A3%81%E5%9C%BA"><span class="toc-number">4.2.2.</span> <span class="toc-text">磁场</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AD%89%E7%A6%BB%E5%AD%90%E4%BD%93"><span class="toc-number">4.2.3.</span> <span class="toc-text">等离子体</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%AB%98%E8%83%BD%E5%B8%A6%E7%94%B5%E7%B2%92%E5%AD%90"><span class="toc-number">4.2.4.</span> <span class="toc-text">高能带电粒子</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%B5%E7%A3%81%E8%BE%90%E5%B0%84"><span class="toc-number">4.2.5.</span> <span class="toc-text">电磁辐射</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%81%E6%98%9F%E4%BD%93%E5%92%8C%E7%A9%BA%E9%97%B4%E7%A2%8E%E7%89%87"><span class="toc-number">4.2.6.</span> <span class="toc-text">流星体和空间碎片</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A9%BA%E9%97%B4%E7%8E%AF%E5%A2%83%E5%AF%B9%E8%88%AA%E5%A4%A9%E5%99%A8%E7%9A%84%E5%BD%B1%E5%93%8D"><span class="toc-number">4.3.</span> <span class="toc-text">空间环境对航天器的影响</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0%E2%80%94%E2%80%94%E5%8D%AB%E6%98%9F%E8%BD%A8%E9%81%93"><span class="toc-number">5.</span> <span class="toc-text">第四章——卫星轨道</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0-1"><span class="toc-number">5.1.</span> <span class="toc-text">概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%AB%E6%98%9F%E8%BD%A8%E9%81%93%E5%8A%9B%E5%AD%A6"><span class="toc-number">5.2.</span> <span class="toc-text">卫星轨道力学</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%A9%E7%90%83"><span class="toc-number">5.2.1.</span> <span class="toc-text">天球</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%AB%E6%98%9F%E8%BF%90%E5%8A%A8%E6%96%B9%E7%A8%8B"><span class="toc-number">5.3.</span> <span class="toc-text">卫星运动方程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%A0%E7%A7%8D%E5%B8%B8%E7%94%A8%E7%9A%84%E8%BD%A8%E9%81%93"><span class="toc-number">5.4.</span> <span class="toc-text">几种常用的轨道</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GPS%E8%BD%A8%E9%81%93%E5%92%8C%E5%AE%9A%E4%BD%8D%E5%8E%9F%E7%90%86"><span class="toc-number">5.5.</span> <span class="toc-text">GPS轨道和定位原理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%8C%E6%98%9F%E5%AE%9A%E4%BD%8D%E5%8E%9F%E7%90%86%EF%BC%88%E8%BF%AD%E4%BB%A3%E8%BF%87%E7%A8%8B%EF%BC%89"><span class="toc-number">5.6.</span> <span class="toc-text">双星定位原理（迭代过程）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%AB%E6%98%9F%E7%BB%84%E7%BD%91"><span class="toc-number">5.7.</span> <span class="toc-text">卫星组网</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%95%E6%98%9F%E8%A6%86%E7%9B%96%E5%92%8C%E6%9E%81%E8%BD%A8%E9%81%93%E5%85%A8%E7%90%83%E8%A6%86%E7%9B%96"><span class="toc-number">5.7.1.</span> <span class="toc-text">单星覆盖和极轨道全球覆盖</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BE%8E%E5%9B%BD%E6%91%A9%E6%89%98%E7%BD%97%E6%8B%89%E5%85%AC%E5%8F%B8%E7%9A%84%E2%80%9C%E9%93%B1%E2%80%9D%E6%98%9F%E6%98%9F%E5%BA%A7"><span class="toc-number">5.7.2.</span> <span class="toc-text">美国摩托罗拉公司的“铱”星星座</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AD%E7%BB%A7%E5%8D%AB%E6%98%9F%E6%B5%8B%E8%B7%9D%E5%8E%9F%E7%90%86"><span class="toc-number">5.7.3.</span> <span class="toc-text">中继卫星测距原理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BD%A8%E9%81%93%E6%B5%8B%E5%AE%9A"><span class="toc-number">5.8.</span> <span class="toc-text">轨道测定</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9D%E8%BD%A8%E7%A1%AE%E5%AE%9A"><span class="toc-number">5.8.1.</span> <span class="toc-text">初轨确定</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BD%A8%E9%81%93%E6%94%B9%E8%BF%9B"><span class="toc-number">5.8.2.</span> <span class="toc-text">轨道改进</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%AB%E6%98%9F%E6%9C%89%E6%95%88%E8%BD%BD%E8%8D%B7%E7%9A%84%E5%88%86%E7%B1%BB"><span class="toc-number">5.8.3.</span> <span class="toc-text">卫星有效载荷的分类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A7%91%E5%AD%A6%E6%8E%A2%E6%B5%8B%E5%92%8C%E5%AE%9E%E9%AA%8C%E7%B1%BB"><span class="toc-number">5.8.3.1.</span> <span class="toc-text">科学探测和实验类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E8%8E%B7%E5%8F%96%E7%B1%BB"><span class="toc-number">5.8.3.2.</span> <span class="toc-text">信息获取类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E4%BC%A0%E8%BE%93%E7%B1%BB"><span class="toc-number">5.8.3.3.</span> <span class="toc-text">信息传输类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E5%9F%BA%E5%87%86%E7%B1%BB"><span class="toc-number">5.8.3.4.</span> <span class="toc-text">信息基准类</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%AB%E6%98%9F%E6%9C%89%E6%95%88%E8%BD%BD%E8%8D%B7%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%B8%80%E8%88%AC%E5%8E%9F%E5%88%99"><span class="toc-number">5.8.4.</span> <span class="toc-text">卫星有效载荷设计的一般原则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%AB%E6%98%9F%E6%9C%89%E6%95%88%E8%BD%BD%E8%8D%B7%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%B8%80%E8%88%AC%E6%8A%80%E6%9C%AF%E8%A6%81%E6%B1%82"><span class="toc-number">5.8.5.</span> <span class="toc-text">卫星有效载荷设计的一般技术要求</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AF%B9%E7%8E%AF%E5%A2%83%E7%9A%84%E9%80%82%E5%BA%94%E6%80%A7"><span class="toc-number">5.8.5.1.</span> <span class="toc-text">对环境的适应性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%B4%A8%E9%87%8F%E3%80%81%E4%BD%93%E7%A7%AF%E3%80%81%E5%8A%9F%E8%80%97%E4%B8%8E%E5%8F%AF%E9%9D%A0%E6%80%A7%E8%A6%81%E6%B1%82"><span class="toc-number">5.8.5.2.</span> <span class="toc-text">质量、体积、功耗与可靠性要求</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%BB%A1%E8%B6%B3%E4%B8%8E%E5%8D%AB%E6%98%9F%E5%B9%B3%E5%8F%B0%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="toc-number">5.8.5.3.</span> <span class="toc-text">满足与卫星平台之间的关系</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BF%85%E9%A1%BB%E6%BB%A1%E8%B6%B3%E4%B8%8E%E5%BA%94%E7%94%A8%E7%B3%BB%E7%BB%9F%E4%B9%8B%E9%97%B4%E7%9A%84%E7%89%B9%E5%AE%9A%E5%85%B3%E7%B3%BB"><span class="toc-number">5.8.5.4.</span> <span class="toc-text">必须满足与应用系统之间的特定关系</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%9A%E4%BF%A1%E5%8D%AB%E6%98%9F%E6%9C%89%E6%95%88%E8%BD%BD%E8%8D%B7"><span class="toc-number">5.8.6.</span> <span class="toc-text">通信卫星有效载荷</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BD%AC%E5%8F%91%E5%99%A8%E5%88%86%E7%B3%BB%E7%BB%9F"><span class="toc-number">5.8.6.1.</span> <span class="toc-text">转发器分系统</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%A9%E7%BA%BF%E5%88%86%E7%B3%BB%E7%BB%9F"><span class="toc-number">5.8.6.2.</span> <span class="toc-text">天线分系统</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%B0%E7%90%83%E8%B5%84%E6%BA%90%E5%8D%AB%E6%98%9F%E6%9C%89%E6%95%88%E8%BD%BD%E8%8D%B7"><span class="toc-number">5.8.7.</span> <span class="toc-text">地球资源卫星有效载荷</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%89%E5%AD%A6%E6%88%90%E5%83%8F%E9%81%A5%E6%84%9F%E5%99%A8"><span class="toc-number">5.8.7.1.</span> <span class="toc-text">光学成像遥感器</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E7%AB%A0%E2%80%94%E2%80%94%E5%8D%AB%E6%98%9F%E7%BB%93%E6%9E%84%E4%B8%8E%E6%9C%BA%E6%9E%84"><span class="toc-number">6.</span> <span class="toc-text">第六章——卫星结构与机构</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0-2"><span class="toc-number">6.1.</span> <span class="toc-text">概述</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%9C%E7%94%A8%E4%B8%8E%E5%8A%9F%E8%83%BD"><span class="toc-number">6.1.1.</span> <span class="toc-text">作用与功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%84%E6%88%90%E5%92%8C%E5%BD%A2%E5%BC%8F"><span class="toc-number">6.1.2.</span> <span class="toc-text">组成和形式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8D%AB%E6%98%9F%E7%BB%93%E6%9E%84%E7%9A%84%E7%BB%84%E6%88%90%E5%92%8C%E5%BD%A2%E5%BC%8F"><span class="toc-number">6.1.2.1.</span> <span class="toc-text">卫星结构的组成和形式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8D%AB%E6%98%9F%E6%9C%BA%E6%9E%84%E7%9A%84%E7%BB%84%E6%88%90%E5%92%8C%E5%BD%A2%E5%BC%8F"><span class="toc-number">6.1.2.2.</span> <span class="toc-text">卫星机构的组成和形式</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%94%B5%E6%9C%BA%E9%A9%B1%E5%8A%A8"><span class="toc-number">6.1.2.2.1.</span> <span class="toc-text">电机驱动:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%BC%B9%E7%B0%A7%E9%A9%B1%E5%8A%A8"><span class="toc-number">6.1.2.2.2.</span> <span class="toc-text">弹簧驱动:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%87%AA%E4%BC%B8%E5%B1%95%E9%A9%B1%E5%8A%A8"><span class="toc-number">6.1.2.2.3.</span> <span class="toc-text">自伸展驱动:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E9%A9%B1%E5%8A%A8"><span class="toc-number">6.1.2.2.4.</span> <span class="toc-text">其他驱动:</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%BA%E6%9E%84%E7%9A%84%E6%8E%A7%E5%88%B6%E6%96%B9%E5%BC%8F"><span class="toc-number">6.1.2.3.</span> <span class="toc-text">机构的控制方式</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A0%94%E7%A9%B6%E9%98%B6%E6%AE%B5%E5%92%8C%E6%AD%A5%E9%AA%A4"><span class="toc-number">6.1.3.</span> <span class="toc-text">研究阶段和步骤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%AB%E6%98%9F%E6%9C%BA%E6%9E%84%E4%B8%8E%E6%9C%BA%E6%9E%84%E7%9A%84%E6%9D%90%E6%96%99"><span class="toc-number">6.1.4.</span> <span class="toc-text">卫星机构与机构的材料</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E6%9D%90%E6%96%99%E7%9A%84%E8%A6%81%E6%B1%82"><span class="toc-number">6.1.5.</span> <span class="toc-text">对材料的要求</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%83%E7%AB%A0%E2%80%94%E2%80%94%E5%8D%AB%E6%98%9F%E7%83%AD%E6%8E%A7%E5%88%B6"><span class="toc-number">7.</span> <span class="toc-text">第七章——卫星热控制</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0-3"><span class="toc-number">7.1.</span> <span class="toc-text">概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%88%AA%E5%A4%A9%E5%99%A8%E7%83%AD%E6%8E%A7%E7%B3%BB%E7%BB%9F%E6%9E%84%E5%BB%BA%E7%8E%B0%E7%8A%B6"><span class="toc-number">7.2.</span> <span class="toc-text">航天器热控系统构建现状</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AB%A6%E5%A8%A5%E4%BA%94%E5%8F%B7%E4%B8%8A%E7%9A%84%E7%83%AD%E6%8E%A7%E6%96%B0%E7%B3%BB%E7%BB%9F"><span class="toc-number">7.3.</span> <span class="toc-text">嫦娥五号上的热控新系统</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AD%A6%E4%B9%A0%E5%BF%83%E5%BE%97%E4%B8%8E%E5%8F%8D%E6%80%9D"><span class="toc-number">8.</span> <span class="toc-text">学习心得与反思</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%AB%E6%98%9F%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-number">8.1.</span> <span class="toc-text">卫星的概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E6%80%9D%E6%83%B3"><span class="toc-number">8.2.</span> <span class="toc-text">系统思想</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A0%94%E7%A9%B6%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%88%86%E7%B1%BB"><span class="toc-number">8.3.</span> <span class="toc-text">研究对象的分类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83"><span class="toc-number">8.4.</span> <span class="toc-text">环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A7%91%E5%AD%A6%E5%AF%B9%E4%BA%8E%E6%8A%80%E6%9C%AF%E7%9A%84%E9%87%8D%E8%A6%81%E6%80%A7"><span class="toc-number">8.5.</span> <span class="toc-text">科学对于技术的重要性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A0%94%E7%A9%B6%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%92%E5%BA%A6"><span class="toc-number">8.6.</span> <span class="toc-text">研究问题的角度</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%88%E4%BD%9C"><span class="toc-number">8.7.</span> <span class="toc-text">合作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%92%E5%BD%92%E4%B8%8E%E8%BF%AD%E4%BB%A3"><span class="toc-number">8.8.</span> <span class="toc-text">递归与迭代</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%90%86%E8%A7%A3%E9%9C%80%E6%B1%82"><span class="toc-number">8.9.</span> <span class="toc-text">理解需求</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%8D%E6%80%9D"><span class="toc-number">8.10.</span> <span class="toc-text">反思</span></a></li></ol></li></ol>
+    </div>
+    
+    <div class="back-top iconfont-archer">&#xe639;</div>
+    <div class="sidebar sidebar-hide">
+    <ul class="sidebar-tabs sidebar-tabs-active-0">
+        <li class="sidebar-tab-archives"><span class="iconfont-archer">&#xe67d;</span><span class="tab-name">Archive</span></li>
+        <li class="sidebar-tab-tags"><span class="iconfont-archer">&#xe61b;</span><span class="tab-name">Tag</span></li>
+        <li class="sidebar-tab-categories"><span class="iconfont-archer">&#xe666;</span><span class="tab-name">Cate</span></li>
+    </ul>
+    <div class="sidebar-content sidebar-content-show-archive">
+          <div class="sidebar-panel-archives">
+    <!-- 在ejs中将archive按照时间排序 -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="total-and-search">
+        <div class="total-archive">
+        Total : 4
+        </div>
+        <!-- search  -->
+        
+    </div>
+    
+    <div class="post-archive">
+    
+    
+    
+    
+    <div class="archive-year"> 2021 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/11</span><a class="archive-post-title" href= "/2021/01/11/%E5%AF%92%E5%81%87%E8%AE%A1%E5%88%92/" >寒假画饼</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> Invalid date </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">Invalid date</span><a class="archive-post-title" href= "/2020/10/31/%E5%AF%9D%E5%AE%A4%E7%94%A8%E6%8C%87%E7%BA%B9%E9%94%81/" >寝室用指纹锁</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2021 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/14</span><a class="archive-post-title" href= "/2021/01/14/%E3%80%8A%E5%8D%AB%E6%98%9F%E5%B7%A5%E7%A8%8B%E6%A6%82%E8%AE%BA%E3%80%8B%E7%AC%94%E8%AE%B0%E5%8F%8A%E5%BF%83%E5%BE%97/" >卫星工程 (上）笔记</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2020 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/19</span><a class="archive-post-title" href= "/2020/12/19/%E8%B4%A6%E5%8F%B7%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95%E7%B3%BB%E7%BB%9F%EF%BC%88base64%EF%BC%89/" >账号密码登录系统（base64）？</a>
+        </li>
+    
+    </div>
+  </div>
+        <div class="sidebar-panel-tags">
+    <div class="sidebar-tags-name">
+    
+    </div>
+    <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
+    <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
+    缺失模块。<br/>
+    1、请确保node版本大于6.2<br/>
+    2、在博客根目录（注意不是archer根目录）执行以下命令：<br/>
+    <span style="color: #f75357; font-size: 1rem; line-height: 2rem;">npm i hexo-generator-json-content --save</span><br/>
+    3、在根目录_config.yml里添加配置：
+    <pre style="color: #787878; font-size: 0.6rem;">
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: true
+    tags: true</pre>
+    </div> 
+    <div class="sidebar-tags-list"></div>
+</div>
+        <div class="sidebar-panel-categories">
+    <div class="sidebar-categories-name">
+    
+        <span class="sidebar-category-name" data-categories="卫星"><span class="iconfont-archer">&#xe60a;</span>卫星</span>
+    
+        <span class="sidebar-category-name" data-categories="电子设计"><span class="iconfont-archer">&#xe60a;</span>电子设计</span>
+    
+        <span class="sidebar-category-name" data-categories="码"><span class="iconfont-archer">&#xe60a;</span>码</span>
+    
+        <span class="sidebar-category-name" data-categories="痴人说梦"><span class="iconfont-archer">&#xe60a;</span>痴人说梦</span>
+    
+    </div>
+    <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
+    <div class="sidebar-categories-list"></div>
+</div>
+    </div>
+</div> 
+    <script>
+    var siteMeta = {
+        root: "/",
+        author: "yuexiaqiufeng"
+    }
+</script>
+    <!-- CDN failover -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <script type="text/javascript">
+        if (typeof window.$ === 'undefined')
+        {
+            console.warn('jquery load from jsdelivr failed, will load local script')
+            document.write('<script src="/lib/jquery.min.js">\x3C/script>')
+        }
+    </script>
+    <script src="/scripts/main.js"></script>
+    <!-- algolia -->
+    
+    <!-- busuanzi  -->
+    
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    <!-- CNZZ  -->
+    
+    </div>
+    <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
+     
+    </body>
+</html>
+
+
